@@ -10,6 +10,7 @@ git submodule sync
 git submodule update
 
 set -e 
+export FORCE_UNSAFE_CONFIGURE=1
 cd `dirname $0`
 
 if [ ! -e buildroot/.config ]
